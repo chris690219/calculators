@@ -28,7 +28,7 @@ class _InputPageState extends State<InputPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('BMI CALCULATOR'),
+        title: Text('KALKULATOR BMI'),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -48,7 +48,7 @@ class _InputPageState extends State<InputPage> {
                       : kInactiveCardColour,
                   cardChild: IconContent(
                     icon: FontAwesomeIcons.mars,
-                    label: 'MALE',
+                    label: 'MĘŻCZYZNA',
                   ),
                 ),
               ),
@@ -64,7 +64,7 @@ class _InputPageState extends State<InputPage> {
                       : kInactiveCardColour,
                   cardChild: IconContent(
                     icon: FontAwesomeIcons.venus,
-                    label: 'FEMALE',
+                    label: 'KOBIETA',
                   ),
                 ),
               ),
@@ -77,7 +77,7 @@ class _InputPageState extends State<InputPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Text(
-                    'HEIGHT',
+                    'WZROST',
                     style: kLabelTextStyle,
                   ),
                   Row(
@@ -131,7 +131,7 @@ class _InputPageState extends State<InputPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Text(
-                          'WEIGHT',
+                          'WAGA',
                           style: kLabelTextStyle,
                         ),
                         Text(
@@ -172,7 +172,7 @@ class _InputPageState extends State<InputPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Text(
-                          'AGE',
+                          'WIEK',
                           style: kLabelTextStyle,
                         ),
                         Text(
@@ -212,7 +212,7 @@ class _InputPageState extends State<InputPage> {
             ),
           ),
           BottomButton(
-            buttonTitle: 'CALCULATE',
+            buttonTitle: 'OBLICZ',
             onTap: () {
               CalculatorBrain calc =
                   CalculatorBrain(height: height, weight: weight);

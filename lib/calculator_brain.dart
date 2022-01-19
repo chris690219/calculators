@@ -15,21 +15,21 @@ class CalculatorBrain {
 
   String getResult() {
     if (_bmi >= 25) {
-      return 'Overweight';
+      return 'Nadwaga';
     } else if (_bmi > 18.5) {
-      return 'Normal';
+      return 'W normie';
     } else {
-      return 'Underweight';
+      return 'Niedowaga';
     }
   }
 
   String getInterpretation() {
     if (_bmi >= 25) {
-      return 'You have a higher than normal body weight. Try to exercise more.';
-    } else if (_bmi >= 18.5) {
-      return 'You have a normal body weight. Good job!';
+      return 'Twoja waga jest powyżej normy. Postaraj się wiecej ćwiczyć.';
+    } else if (_bmi >= 18.5 ) {
+      return 'Twoja waga jest w normie. Dobra robota!';
     } else {
-      return 'You have a lower than normal body weight. You can eat a bit more.';
+      return 'Twoja waga jest poniżej normy. Zacznij jeść więcej.';
     }
   }
 }
